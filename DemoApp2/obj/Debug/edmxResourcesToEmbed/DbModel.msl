@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище DemoAppBdModelContainer" CdmEntityContainer="DemoAppBdEntities">
+    <EntitySetMapping Name="Agent">
+      <EntityTypeMapping TypeName="DemoAppBdModel.Agent">
+        <MappingFragment StoreEntitySet="Agent">
+          <ScalarProperty Name="AgentId" ColumnName="AgentId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+          <ScalarProperty Name="LegalAddress" ColumnName="LegalAddress" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="Principal" ColumnName="Principal" />
+          <ScalarProperty Name="TIN" ColumnName="TIN" />
+          <ScalarProperty Name="KPP" ColumnName="KPP" />
+          <ScalarProperty Name="TotalImplementation" ColumnName="TotalImplementation" />
+          <ScalarProperty Name="CompanyTypeId" ColumnName="CompanyTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Application">
+      <EntityTypeMapping TypeName="DemoAppBdModel.Application">
+        <MappingFragment StoreEntitySet="Application">
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="ManagerId" ColumnName="ManagerId" />
+          <ScalarProperty Name="AgentId" ColumnName="AgentId" />
+          <ScalarProperty Name="CreatingStartDate" ColumnName="CreatingStartDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ApplicationStatusId" ColumnName="ApplicationStatusId" />
+          <ScalarProperty Name="PrepaymentIsMade" ColumnName="PrepaymentIsMade" />
+          <ScalarProperty Name="SummaryCost" ColumnName="SummaryCost" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ApplicationStatus">
+      <EntityTypeMapping TypeName="DemoAppBdModel.ApplicationStatus">
+        <MappingFragment StoreEntitySet="ApplicationStatus">
+          <ScalarProperty Name="ApplicationStatusId" ColumnName="ApplicationStatusId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CompanyType">
+      <EntityTypeMapping TypeName="DemoAppBdModel.CompanyType">
+        <MappingFragment StoreEntitySet="CompanyType">
+          <ScalarProperty Name="CompanyTypeId" ColumnName="CompanyTypeId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employee">
+      <EntityTypeMapping TypeName="DemoAppBdModel.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Patronymic" ColumnName="Patronymic" />
+          <ScalarProperty Name="Birthday" ColumnName="Birthday" />
+          <ScalarProperty Name="PassportSeries" ColumnName="PassportSeries" />
+          <ScalarProperty Name="PassportNumber" ColumnName="PassportNumber" />
+          <ScalarProperty Name="BankInformation" ColumnName="BankInformation" />
+          <ScalarProperty Name="PositionId" ColumnName="PositionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmployeeMovement">
+      <EntityTypeMapping TypeName="DemoAppBdModel.EmployeeMovement">
+        <MappingFragment StoreEntitySet="EmployeeMovement">
+          <ScalarProperty Name="EmployeeMovementId" ColumnName="EmployeeMovementId" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="Place" ColumnName="Place" />
+          <ScalarProperty Name="MovementTypeId" ColumnName="MovementTypeId" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Equipment">
+      <EntityTypeMapping TypeName="DemoAppBdModel.Equipment">
+        <MappingFragment StoreEntitySet="Equipment">
+          <ScalarProperty Name="EquipmentId" ColumnName="EquipmentId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="RequiredSkill" ColumnName="RequiredSkill" />
+          <ScalarProperty Name="EquipmentStateId" ColumnName="EquipmentStateId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EquipmentMaster">
+      <EntityTypeMapping TypeName="DemoAppBdModel.EquipmentMaster">
+        <MappingFragment StoreEntitySet="EquipmentMaster">
+          <ScalarProperty Name="EquipmentMasterId" ColumnName="EquipmentMasterId" />
+          <ScalarProperty Name="EquipmentId" ColumnName="EquipmentId" />
+          <ScalarProperty Name="MasterId" ColumnName="MasterId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EquipmentState">
+      <EntityTypeMapping TypeName="DemoAppBdModel.EquipmentState">
+        <MappingFragment StoreEntitySet="EquipmentState">
+          <ScalarProperty Name="EquipmentStateId" ColumnName="EquipmentStateId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Manufacture">
+      <EntityTypeMapping TypeName="DemoAppBdModel.Manufacture">
+        <MappingFragment StoreEntitySet="Manufacture">
+          <ScalarProperty Name="ManufactureId" ColumnName="ManufactureId" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="WorkshopId" ColumnName="WorkshopId" />
+          <ScalarProperty Name="PeopleRequired" ColumnName="PeopleRequired" />
+          <ScalarProperty Name="TimeRequired" ColumnName="TimeRequired" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ManufactureMaterial">
+      <EntityTypeMapping TypeName="DemoAppBdModel.ManufactureMaterial">
+        <MappingFragment StoreEntitySet="ManufactureMaterial">
+          <ScalarProperty Name="ManufactureMaterialId" ColumnName="ManufactureMaterialId" />
+          <ScalarProperty Name="ManufactureId" ColumnName="ManufactureId" />
+          <ScalarProperty Name="MaterialId" ColumnName="MaterialId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Master">
+      <EntityTypeMapping TypeName="DemoAppBdModel.Master">
+        <MappingFragment StoreEntitySet="Master">
+          <ScalarProperty Name="MasterId" ColumnName="MasterId" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="HasFamily" ColumnName="HasFamily" />
+          <ScalarProperty Name="HealthProblems" ColumnName="HealthProblems" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Material">
+      <EntityTypeMapping TypeName="DemoAppBdModel.Material">
+        <MappingFragment StoreEntitySet="Material">
+          <ScalarProperty Name="MaterialId" ColumnName="MaterialId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="MaterialTypeId" ColumnName="MaterialTypeId" />
+          <ScalarProperty Name="SupplierId" ColumnName="SupplierId" />
+          <ScalarProperty Name="QuantityInPackage" ColumnName="QuantityInPackage" />
+          <ScalarProperty Name="UnitTypeId" ColumnName="UnitTypeId" />
+          <ScalarProperty Name="QuantityInStock" ColumnName="QuantityInStock" />
+          <ScalarProperty Name="MinCost" ColumnName="MinCost" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MaterialHistory">
+      <EntityTypeMapping TypeName="DemoAppBdModel.MaterialHistory">
+        <MappingFragment StoreEntitySet="MaterialHistory">
+          <ScalarProperty Name="MaterialHistoryId" ColumnName="MaterialHistoryId" />
+          <ScalarProperty Name="MaterialId" ColumnName="MaterialId" />
+          <ScalarProperty Name="OperationTypeId" ColumnName="OperationTypeId" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MaterialType">
+      <EntityTypeMapping TypeName="DemoAppBdModel.MaterialType">
+        <MappingFragment StoreEntitySet="MaterialType">
+          <ScalarProperty Name="MaterialTypeId" ColumnName="MaterialTypeId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MovementType">
+      <EntityTypeMapping TypeName="DemoAppBdModel.MovementType">
+        <MappingFragment StoreEntitySet="MovementType">
+          <ScalarProperty Name="MovementTypeId" ColumnName="MovementTypeId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OperationType">
+      <EntityTypeMapping TypeName="DemoAppBdModel.OperationType">
+        <MappingFragment StoreEntitySet="OperationType">
+          <ScalarProperty Name="OperationTypeId" ColumnName="OperationTypeId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Position">
+      <EntityTypeMapping TypeName="DemoAppBdModel.Position">
+        <MappingFragment StoreEntitySet="Position">
+          <ScalarProperty Name="PositionId" ColumnName="PositionId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PriceHistory">
+      <EntityTypeMapping TypeName="DemoAppBdModel.PriceHistory">
+        <MappingFragment StoreEntitySet="PriceHistory">
+          <ScalarProperty Name="PriceHistoryId" ColumnName="PriceHistoryId" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="OldPrice" ColumnName="OldPrice" />
+          <ScalarProperty Name="NewPrice" ColumnName="NewPrice" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Product">
+      <EntityTypeMapping TypeName="DemoAppBdModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="Article" ColumnName="Article" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ProductTypeId" ColumnName="ProductTypeId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+          <ScalarProperty Name="MinimalCost" ColumnName="MinimalCost" />
+          <ScalarProperty Name="PackageSize" ColumnName="PackageSize" />
+          <ScalarProperty Name="WeightOfProduct" ColumnName="WeightOfProduct" />
+          <ScalarProperty Name="WeightWithPackage" ColumnName="WeightWithPackage" />
+          <ScalarProperty Name="ProductStandartId" ColumnName="ProductStandartId" />
+          <ScalarProperty Name="CertificatePicture" ColumnName="CertificatePicture" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductApplication">
+      <EntityTypeMapping TypeName="DemoAppBdModel.ProductApplication">
+        <MappingFragment StoreEntitySet="ProductApplication">
+          <ScalarProperty Name="ProductApplicationId" ColumnName="ProductApplicationId" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductStandart">
+      <EntityTypeMapping TypeName="DemoAppBdModel.ProductStandart">
+        <MappingFragment StoreEntitySet="ProductStandart">
+          <ScalarProperty Name="ProductStandartId" ColumnName="ProductStandartId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductType">
+      <EntityTypeMapping TypeName="DemoAppBdModel.ProductType">
+        <MappingFragment StoreEntitySet="ProductType">
+          <ScalarProperty Name="ProductTypeId" ColumnName="ProductTypeId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sale">
+      <EntityTypeMapping TypeName="DemoAppBdModel.Sale">
+        <MappingFragment StoreEntitySet="Sale">
+          <ScalarProperty Name="SaleId" ColumnName="SaleId" />
+          <ScalarProperty Name="Sale1" ColumnName="Sale" />
+          <ScalarProperty Name="TotalImplementation" ColumnName="TotalImplementation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SaleHistory">
+      <EntityTypeMapping TypeName="DemoAppBdModel.SaleHistory">
+        <MappingFragment StoreEntitySet="SaleHistory">
+          <ScalarProperty Name="SaleHistoryId" ColumnName="SaleHistoryId" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="AgentId" ColumnName="AgentId" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="SummaryCost" ColumnName="SummaryCost" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SalePoint">
+      <EntityTypeMapping TypeName="DemoAppBdModel.SalePoint">
+        <MappingFragment StoreEntitySet="SalePoint">
+          <ScalarProperty Name="SalePointId" ColumnName="SalePointId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="AgentId" ColumnName="AgentId" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Supplier">
+      <EntityTypeMapping TypeName="DemoAppBdModel.Supplier">
+        <MappingFragment StoreEntitySet="Supplier">
+          <ScalarProperty Name="SupplierId" ColumnName="SupplierId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="TIN" ColumnName="TIN" />
+          <ScalarProperty Name="CompanyTypeId" ColumnName="CompanyTypeId" />
+          <ScalarProperty Name="MaterialHistoryId" ColumnName="MaterialHistoryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UnitType">
+      <EntityTypeMapping TypeName="DemoAppBdModel.UnitType">
+        <MappingFragment StoreEntitySet="UnitType">
+          <ScalarProperty Name="UnitTypeId" ColumnName="UnitTypeId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Workshop">
+      <EntityTypeMapping TypeName="DemoAppBdModel.Workshop">
+        <MappingFragment StoreEntitySet="Workshop">
+          <ScalarProperty Name="WorkshopId" ColumnName="WorkshopId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
