@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="DemoAppBdModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+<Schema Namespace="DemoAppDbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
   <EntityType Name="Agent">
     <Key>
       <PropertyRef Name="AgentId" />
@@ -707,7 +707,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="DemoAppBdEntities" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="DemoAppDbEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Agent" EntityType="Self.Agent" />
     <EntitySet Name="Application" EntityType="Self.Application" />
     <EntitySet Name="ApplicationStatus" EntityType="Self.ApplicationStatus" />

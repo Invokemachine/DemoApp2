@@ -14,6 +14,7 @@ namespace DemoApp2
     
     public partial class UnitType
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public UnitType()
         {
             this.Material = new HashSet<Material>();
@@ -22,6 +23,7 @@ namespace DemoApp2
         public int UnitTypeId { get; set; }
         public string Name { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Material> Material { get; set; }
     }
 }

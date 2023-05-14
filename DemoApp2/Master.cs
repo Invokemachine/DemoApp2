@@ -14,6 +14,7 @@ namespace DemoApp2
     
     public partial class Master
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Master()
         {
             this.EquipmentMaster = new HashSet<EquipmentMaster>();
@@ -25,6 +26,7 @@ namespace DemoApp2
         public string HealthProblems { get; set; }
     
         public virtual Employee Employee { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<EquipmentMaster> EquipmentMaster { get; set; }
     }
 }

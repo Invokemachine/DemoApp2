@@ -14,6 +14,7 @@ namespace DemoApp2
     
     public partial class Application
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Application()
         {
             this.ProductApplication = new HashSet<ProductApplication>();
@@ -32,6 +33,7 @@ namespace DemoApp2
     
         public virtual Agent Agent { get; set; }
         public virtual ApplicationStatus ApplicationStatus { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ProductApplication> ProductApplication { get; set; }
     }
 }

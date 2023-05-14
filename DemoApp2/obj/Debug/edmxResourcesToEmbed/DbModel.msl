@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="Хранилище DemoAppBdModelContainer" CdmEntityContainer="DemoAppBdEntities">
+  <EntityContainerMapping StorageEntityContainer="Хранилище DemoAppDbModelContainer" CdmEntityContainer="DemoAppDbEntities">
     <EntitySetMapping Name="Agent">
-      <EntityTypeMapping TypeName="DemoAppBdModel.Agent">
+      <EntityTypeMapping TypeName="DemoAppDbModel.Agent">
         <MappingFragment StoreEntitySet="Agent">
           <ScalarProperty Name="AgentId" ColumnName="AgentId" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -20,7 +20,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Application">
-      <EntityTypeMapping TypeName="DemoAppBdModel.Application">
+      <EntityTypeMapping TypeName="DemoAppDbModel.Application">
         <MappingFragment StoreEntitySet="Application">
           <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
           <ScalarProperty Name="ManagerId" ColumnName="ManagerId" />
@@ -36,7 +36,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="ApplicationStatus">
-      <EntityTypeMapping TypeName="DemoAppBdModel.ApplicationStatus">
+      <EntityTypeMapping TypeName="DemoAppDbModel.ApplicationStatus">
         <MappingFragment StoreEntitySet="ApplicationStatus">
           <ScalarProperty Name="ApplicationStatusId" ColumnName="ApplicationStatusId" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -44,7 +44,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="CompanyType">
-      <EntityTypeMapping TypeName="DemoAppBdModel.CompanyType">
+      <EntityTypeMapping TypeName="DemoAppDbModel.CompanyType">
         <MappingFragment StoreEntitySet="CompanyType">
           <ScalarProperty Name="CompanyTypeId" ColumnName="CompanyTypeId" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -52,7 +52,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Employee">
-      <EntityTypeMapping TypeName="DemoAppBdModel.Employee">
+      <EntityTypeMapping TypeName="DemoAppDbModel.Employee">
         <MappingFragment StoreEntitySet="Employee">
           <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
           <ScalarProperty Name="Surname" ColumnName="Surname" />
@@ -67,7 +67,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="EmployeeMovement">
-      <EntityTypeMapping TypeName="DemoAppBdModel.EmployeeMovement">
+      <EntityTypeMapping TypeName="DemoAppDbModel.EmployeeMovement">
         <MappingFragment StoreEntitySet="EmployeeMovement">
           <ScalarProperty Name="EmployeeMovementId" ColumnName="EmployeeMovementId" />
           <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
@@ -78,7 +78,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Equipment">
-      <EntityTypeMapping TypeName="DemoAppBdModel.Equipment">
+      <EntityTypeMapping TypeName="DemoAppDbModel.Equipment">
         <MappingFragment StoreEntitySet="Equipment">
           <ScalarProperty Name="EquipmentId" ColumnName="EquipmentId" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -88,7 +88,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="EquipmentMaster">
-      <EntityTypeMapping TypeName="DemoAppBdModel.EquipmentMaster">
+      <EntityTypeMapping TypeName="DemoAppDbModel.EquipmentMaster">
         <MappingFragment StoreEntitySet="EquipmentMaster">
           <ScalarProperty Name="EquipmentMasterId" ColumnName="EquipmentMasterId" />
           <ScalarProperty Name="EquipmentId" ColumnName="EquipmentId" />
@@ -97,7 +97,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="EquipmentState">
-      <EntityTypeMapping TypeName="DemoAppBdModel.EquipmentState">
+      <EntityTypeMapping TypeName="DemoAppDbModel.EquipmentState">
         <MappingFragment StoreEntitySet="EquipmentState">
           <ScalarProperty Name="EquipmentStateId" ColumnName="EquipmentStateId" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -105,7 +105,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Manufacture">
-      <EntityTypeMapping TypeName="DemoAppBdModel.Manufacture">
+      <EntityTypeMapping TypeName="DemoAppDbModel.Manufacture">
         <MappingFragment StoreEntitySet="Manufacture">
           <ScalarProperty Name="ManufactureId" ColumnName="ManufactureId" />
           <ScalarProperty Name="ProductId" ColumnName="ProductId" />
@@ -116,7 +116,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="ManufactureMaterial">
-      <EntityTypeMapping TypeName="DemoAppBdModel.ManufactureMaterial">
+      <EntityTypeMapping TypeName="DemoAppDbModel.ManufactureMaterial">
         <MappingFragment StoreEntitySet="ManufactureMaterial">
           <ScalarProperty Name="ManufactureMaterialId" ColumnName="ManufactureMaterialId" />
           <ScalarProperty Name="ManufactureId" ColumnName="ManufactureId" />
@@ -125,7 +125,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Master">
-      <EntityTypeMapping TypeName="DemoAppBdModel.Master">
+      <EntityTypeMapping TypeName="DemoAppDbModel.Master">
         <MappingFragment StoreEntitySet="Master">
           <ScalarProperty Name="MasterId" ColumnName="MasterId" />
           <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
@@ -135,7 +135,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Material">
-      <EntityTypeMapping TypeName="DemoAppBdModel.Material">
+      <EntityTypeMapping TypeName="DemoAppDbModel.Material">
         <MappingFragment StoreEntitySet="Material">
           <ScalarProperty Name="MaterialId" ColumnName="MaterialId" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -152,7 +152,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="MaterialHistory">
-      <EntityTypeMapping TypeName="DemoAppBdModel.MaterialHistory">
+      <EntityTypeMapping TypeName="DemoAppDbModel.MaterialHistory">
         <MappingFragment StoreEntitySet="MaterialHistory">
           <ScalarProperty Name="MaterialHistoryId" ColumnName="MaterialHistoryId" />
           <ScalarProperty Name="MaterialId" ColumnName="MaterialId" />
@@ -162,7 +162,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="MaterialType">
-      <EntityTypeMapping TypeName="DemoAppBdModel.MaterialType">
+      <EntityTypeMapping TypeName="DemoAppDbModel.MaterialType">
         <MappingFragment StoreEntitySet="MaterialType">
           <ScalarProperty Name="MaterialTypeId" ColumnName="MaterialTypeId" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -170,7 +170,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="MovementType">
-      <EntityTypeMapping TypeName="DemoAppBdModel.MovementType">
+      <EntityTypeMapping TypeName="DemoAppDbModel.MovementType">
         <MappingFragment StoreEntitySet="MovementType">
           <ScalarProperty Name="MovementTypeId" ColumnName="MovementTypeId" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -178,7 +178,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="OperationType">
-      <EntityTypeMapping TypeName="DemoAppBdModel.OperationType">
+      <EntityTypeMapping TypeName="DemoAppDbModel.OperationType">
         <MappingFragment StoreEntitySet="OperationType">
           <ScalarProperty Name="OperationTypeId" ColumnName="OperationTypeId" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -186,7 +186,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Position">
-      <EntityTypeMapping TypeName="DemoAppBdModel.Position">
+      <EntityTypeMapping TypeName="DemoAppDbModel.Position">
         <MappingFragment StoreEntitySet="Position">
           <ScalarProperty Name="PositionId" ColumnName="PositionId" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -194,7 +194,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="PriceHistory">
-      <EntityTypeMapping TypeName="DemoAppBdModel.PriceHistory">
+      <EntityTypeMapping TypeName="DemoAppDbModel.PriceHistory">
         <MappingFragment StoreEntitySet="PriceHistory">
           <ScalarProperty Name="PriceHistoryId" ColumnName="PriceHistoryId" />
           <ScalarProperty Name="ProductId" ColumnName="ProductId" />
@@ -205,7 +205,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Product">
-      <EntityTypeMapping TypeName="DemoAppBdModel.Product">
+      <EntityTypeMapping TypeName="DemoAppDbModel.Product">
         <MappingFragment StoreEntitySet="Product">
           <ScalarProperty Name="ProductId" ColumnName="ProductId" />
           <ScalarProperty Name="Article" ColumnName="Article" />
@@ -223,7 +223,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="ProductApplication">
-      <EntityTypeMapping TypeName="DemoAppBdModel.ProductApplication">
+      <EntityTypeMapping TypeName="DemoAppDbModel.ProductApplication">
         <MappingFragment StoreEntitySet="ProductApplication">
           <ScalarProperty Name="ProductApplicationId" ColumnName="ProductApplicationId" />
           <ScalarProperty Name="ProductId" ColumnName="ProductId" />
@@ -232,7 +232,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="ProductStandart">
-      <EntityTypeMapping TypeName="DemoAppBdModel.ProductStandart">
+      <EntityTypeMapping TypeName="DemoAppDbModel.ProductStandart">
         <MappingFragment StoreEntitySet="ProductStandart">
           <ScalarProperty Name="ProductStandartId" ColumnName="ProductStandartId" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -240,7 +240,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="ProductType">
-      <EntityTypeMapping TypeName="DemoAppBdModel.ProductType">
+      <EntityTypeMapping TypeName="DemoAppDbModel.ProductType">
         <MappingFragment StoreEntitySet="ProductType">
           <ScalarProperty Name="ProductTypeId" ColumnName="ProductTypeId" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -248,7 +248,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Sale">
-      <EntityTypeMapping TypeName="DemoAppBdModel.Sale">
+      <EntityTypeMapping TypeName="DemoAppDbModel.Sale">
         <MappingFragment StoreEntitySet="Sale">
           <ScalarProperty Name="SaleId" ColumnName="SaleId" />
           <ScalarProperty Name="Sale1" ColumnName="Sale" />
@@ -257,7 +257,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="SaleHistory">
-      <EntityTypeMapping TypeName="DemoAppBdModel.SaleHistory">
+      <EntityTypeMapping TypeName="DemoAppDbModel.SaleHistory">
         <MappingFragment StoreEntitySet="SaleHistory">
           <ScalarProperty Name="SaleHistoryId" ColumnName="SaleHistoryId" />
           <ScalarProperty Name="ProductId" ColumnName="ProductId" />
@@ -269,7 +269,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="SalePoint">
-      <EntityTypeMapping TypeName="DemoAppBdModel.SalePoint">
+      <EntityTypeMapping TypeName="DemoAppDbModel.SalePoint">
         <MappingFragment StoreEntitySet="SalePoint">
           <ScalarProperty Name="SalePointId" ColumnName="SalePointId" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -279,7 +279,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Supplier">
-      <EntityTypeMapping TypeName="DemoAppBdModel.Supplier">
+      <EntityTypeMapping TypeName="DemoAppDbModel.Supplier">
         <MappingFragment StoreEntitySet="Supplier">
           <ScalarProperty Name="SupplierId" ColumnName="SupplierId" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -290,7 +290,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="UnitType">
-      <EntityTypeMapping TypeName="DemoAppBdModel.UnitType">
+      <EntityTypeMapping TypeName="DemoAppDbModel.UnitType">
         <MappingFragment StoreEntitySet="UnitType">
           <ScalarProperty Name="UnitTypeId" ColumnName="UnitTypeId" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -298,7 +298,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Workshop">
-      <EntityTypeMapping TypeName="DemoAppBdModel.Workshop">
+      <EntityTypeMapping TypeName="DemoAppDbModel.Workshop">
         <MappingFragment StoreEntitySet="Workshop">
           <ScalarProperty Name="WorkshopId" ColumnName="WorkshopId" />
           <ScalarProperty Name="Name" ColumnName="Name" />

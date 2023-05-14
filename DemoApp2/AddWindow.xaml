@@ -1,0 +1,63 @@
+﻿<Window x:Class="DemoApp2.AddWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DemoApp2"
+        mc:Ignorable="d"
+        Title="AddWindow" Height="600" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.1*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <WrapPanel  Background="#F9969E">
+            <Button Width="100" x:Name="BackButton" Content="Назад" HorizontalAlignment="Left" Click="BackButton_Click"/>
+            <Label Content="Добавление" HorizontalAlignment="Center"/>
+        </WrapPanel>
+        <Grid Grid.Row="1" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Label Content="Наименование:" FontSize="14" Height="37" Margin="1" Grid.Column="0" Grid.Row="0"/>
+            <TextBox x:Name="NameTextBox" Height="25" Margin="1" Grid.Column="1" Grid.Row="0" Width="auto"/>
+            <Label Content="Эл. почта:" FontSize="14" Height="37" Margin="1" Grid.Column="0" Grid.Row="1"/>
+            <TextBox x:Name="EmailTextBox" Height="25" Margin="1" Grid.Column="1" Grid.Row="1" Width="auto"/>
+            <Label Content="Номер телефона:" FontSize="14" Height="37" Margin="1" Grid.Column="0" Grid.Row="2"/>
+            <TextBox x:Name="PhoneTextBox" Grid.Row="2" Grid.Column="1" Height="25"/>
+            <Label Content="Юр. адрес:" FontSize="14" Height="37" Margin="1" Grid.Column="0" Grid.Row="3"/>
+            <TextBox x:Name="LegalAddressTextBox" Height="25" Margin="1" Grid.Column="1" Grid.Row="3" Width="auto"/>
+            <Label Content="Приоритет:" FontSize="14" Height="37" Margin="1" Grid.Column="0" Grid.Row="4"/>
+            <TextBox x:Name="PriorityTextBox" Height="25" Margin="1" Grid.Column="1" Grid.Row="4" Width="auto"/>
+            <Label Content="Директор:" FontSize="14" Height="37" Margin="1" Grid.Column="0" Grid.Row="5" Width="auto"/>
+            <TextBox x:Name="PrincipalTextBox" Height="25" Grid.Column="1" Grid.Row="5"/>
+            <Label Content="ИНН:" FontSize="14" Height="37" Margin="1" Grid.Column="0" Grid.Row="6"/>
+            <TextBox x:Name="TINTextBox" Grid.Column="1" Grid.Row="6" Height="25"/>
+            <Label Content="КПП:" FontSize="14" Height="37" Margin="1"  Grid.Column="0" Grid.Row="7"/>
+            <TextBox x:Name="KPPTextBox" Grid.Column="1" Grid.Row="7" Height="25"/>
+            <Label Content="Сумма реализации прод.:" FontSize="14" Height="37" Margin="1" Grid.Column="0" Grid.Row="8"/>
+            <TextBox x:Name="TotalImplementationTextBox" Height="25" Margin="1" Grid.Column="1" Grid.Row="8" Width="auto"/>
+            <Label Content="Тип компании(Id):" FontSize="14" Height="37" Margin="1"  Grid.Column="0" Grid.Row="9"/>
+            <TextBox x:Name="CompanyTypeIdTextBox" Height="25" Margin="1" Grid.Column="1" Grid.Row="9" Width="auto"/>
+            <Image x:Name="Picture" Height="40" Width="65" Margin="3" Source="/Resources/picture.png" Grid.RowSpan="2" Grid.Column="0" Grid.Row="10" HorizontalAlignment="Left" Stretch="Fill"/>
+            <Button x:Name="ImageButoon" Content="Выбрать фото" Height="40" Grid.Row="10" Grid.ColumnSpan="2" Grid.RowSpan="2" Click="ImageButoon_Click"/>
+            <Button x:Name="SaveButton" Content="Сохранить" Grid.Row="12" Grid.ColumnSpan="2" Click="SaveButton_Click"/>
+        </Grid>
+    </Grid>
+</Window>

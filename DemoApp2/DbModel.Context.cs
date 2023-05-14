@@ -13,10 +13,10 @@ namespace DemoApp2
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class DemoAppBdEntities : DbContext
+    public partial class DemoAppDbEntities : DbContext
     {
-        public DemoAppBdEntities()
-            : base("name=DemoAppBdEntities")
+        public DemoAppDbEntities()
+            : base("name=DemoAppDbEntities")
         {
         }
     

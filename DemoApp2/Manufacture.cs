@@ -14,6 +14,7 @@ namespace DemoApp2
     
     public partial class Manufacture
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Manufacture()
         {
             this.ManufactureMaterial = new HashSet<ManufactureMaterial>();
@@ -27,6 +28,7 @@ namespace DemoApp2
     
         public virtual Product Product { get; set; }
         public virtual Workshop Workshop { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ManufactureMaterial> ManufactureMaterial { get; set; }
     }
 }

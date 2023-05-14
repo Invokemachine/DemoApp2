@@ -14,6 +14,7 @@ namespace DemoApp2
     
     public partial class Material
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Material()
         {
             this.ManufactureMaterial = new HashSet<ManufactureMaterial>();
@@ -32,9 +33,11 @@ namespace DemoApp2
         public string Picture { get; set; }
         public double Cost { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ManufactureMaterial> ManufactureMaterial { get; set; }
         public virtual MaterialType MaterialType { get; set; }
         public virtual UnitType UnitType { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<MaterialHistory> MaterialHistory { get; set; }
     }
 }

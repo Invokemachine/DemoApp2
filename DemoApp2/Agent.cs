@@ -14,6 +14,7 @@ namespace DemoApp2
     
     public partial class Agent
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Agent()
         {
             this.Application = new HashSet<Application>();
@@ -34,7 +35,9 @@ namespace DemoApp2
         public int CompanyTypeId { get; set; }
     
         public virtual CompanyType CompanyType { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Application> Application { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<SalePoint> SalePoint { get; set; }
     }
 }

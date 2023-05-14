@@ -1,66 +1,66 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="fa1d793552d04f509579e0ecb5eb542a" Name="Diagram1">
-        <EntityTypeShape EntityType="DemoAppBdModel.Agent" Width="1.5" PointX="3.75" PointY="21.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="DemoAppBdModel.Application" Width="1.5" PointX="6" PointY="23.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="DemoAppBdModel.ApplicationStatus" Width="1.5" PointX="3.75" PointY="26.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="DemoAppBdModel.CompanyType" Width="1.5" PointX="1.5" PointY="23" IsExpanded="true" />
-        <EntityTypeShape EntityType="DemoAppBdModel.Employee" Width="1.5" PointX="10" PointY="11.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="DemoAppBdModel.EmployeeMovement" Width="1.5" PointX="12.25" PointY="11.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="DemoAppBdModel.Equipment" Width="1.5" PointX="12.25" PointY="23.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DemoAppBdModel.EquipmentMaster" Width="1.5" PointX="14.5" PointY="14.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="DemoAppBdModel.EquipmentState" Width="1.5" PointX="10" PointY="24" IsExpanded="true" />
-        <EntityTypeShape EntityType="DemoAppBdModel.Manufacture" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DemoAppBdModel.ManufactureMaterial" Width="1.5" PointX="7.5" PointY="3.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="DemoAppBdModel.Master" Width="1.5" PointX="12.25" PointY="14.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DemoAppBdModel.Material" Width="1.5" PointX="5.25" PointY="17.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="DemoAppBdModel.MaterialHistory" Width="1.5" PointX="7.5" PointY="17.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="DemoAppBdModel.MaterialType" Width="1.5" PointX="3" PointY="17.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="DemoAppBdModel.MovementType" Width="1.5" PointX="10" PointY="15.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="DemoAppBdModel.OperationType" Width="1.5" PointX="5.25" PointY="29.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="DemoAppBdModel.Position" Width="1.5" PointX="7.75" PointY="11.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="DemoAppBdModel.PriceHistory" Width="1.5" PointX="5.25" PointY="7.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DemoAppBdModel.Product" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="DemoAppBdModel.ProductApplication" Width="1.5" PointX="8.25" PointY="6.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="DemoAppBdModel.ProductStandart" Width="1.5" PointX="0.75" PointY="6.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="DemoAppBdModel.ProductType" Width="1.5" PointX="0.75" PointY="3.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="DemoAppBdModel.Sale" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DemoAppBdModel.SaleHistory" Width="1.5" PointX="5.25" PointY="13.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="DemoAppBdModel.SalePoint" Width="1.5" PointX="6" PointY="31.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="DemoAppBdModel.Supplier" Width="1.5" PointX="9.75" PointY="20.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="DemoAppBdModel.UnitType" Width="1.5" PointX="3" PointY="19.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="DemoAppBdModel.Workshop" Width="1.5" PointX="3" PointY="2.25" IsExpanded="true" />
-        <AssociationConnector Association="DemoAppBdModel.FK_Agent_CompanyType" ManuallyRouted="false" />
-        <AssociationConnector Association="DemoAppBdModel.FK_Application_Agent" ManuallyRouted="false" />
-        <AssociationConnector Association="DemoAppBdModel.FK_SalePoint_Agent" ManuallyRouted="false" />
-        <AssociationConnector Association="DemoAppBdModel.FK_Application_ApplicationStatus" ManuallyRouted="false" />
-        <AssociationConnector Association="DemoAppBdModel.FK_ProductApplication_Application" ManuallyRouted="false" />
-        <AssociationConnector Association="DemoAppBdModel.FK_Supplier_CompanyType" ManuallyRouted="false" />
-        <AssociationConnector Association="DemoAppBdModel.FK_Employee_Position" ManuallyRouted="false" />
-        <AssociationConnector Association="DemoAppBdModel.FK_EmployeeMovement_Employee" ManuallyRouted="false" />
-        <AssociationConnector Association="DemoAppBdModel.FK_Master_Employee" ManuallyRouted="false" />
-        <AssociationConnector Association="DemoAppBdModel.FK_EmployeeMovement_MovementType" ManuallyRouted="false" />
-        <AssociationConnector Association="DemoAppBdModel.FK_Equipment_EquipmentState" ManuallyRouted="false" />
-        <AssociationConnector Association="DemoAppBdModel.FK_EquipmentMaster_Equipment" ManuallyRouted="false" />
-        <AssociationConnector Association="DemoAppBdModel.FK_EquipmentMaster_Master" ManuallyRouted="false" />
-        <AssociationConnector Association="DemoAppBdModel.FK_Manufacture_Product" ManuallyRouted="false" />
-        <AssociationConnector Association="DemoAppBdModel.FK_Manufacture_Workshop" ManuallyRouted="false" />
-        <AssociationConnector Association="DemoAppBdModel.FK_ManufactureMaterial_Manufacture" ManuallyRouted="false" />
-        <AssociationConnector Association="DemoAppBdModel.FK_ManufactureMaterial_Material" ManuallyRouted="false" />
-        <AssociationConnector Association="DemoAppBdModel.FK_Material_MaterialType" ManuallyRouted="false" />
-        <AssociationConnector Association="DemoAppBdModel.FK_Material_UnitType" ManuallyRouted="false" />
-        <AssociationConnector Association="DemoAppBdModel.FK_MaterialHistory_Material" ManuallyRouted="false" />
-        <AssociationConnector Association="DemoAppBdModel.FK_MaterialHistory_OperationType" ManuallyRouted="false" />
-        <AssociationConnector Association="DemoAppBdModel.FK_Supplier_MaterialHistory" ManuallyRouted="false" />
-        <AssociationConnector Association="DemoAppBdModel.FK_PriceHistory_Product" ManuallyRouted="false" />
-        <AssociationConnector Association="DemoAppBdModel.FK_Product_ProductStandart" ManuallyRouted="false" />
-        <AssociationConnector Association="DemoAppBdModel.FK_Product_ProductType" ManuallyRouted="false" />
-        <AssociationConnector Association="DemoAppBdModel.FK_ProductApplication_Product" ManuallyRouted="false" />
-        <AssociationConnector Association="DemoAppBdModel.FK_SaleHistory_Product" ManuallyRouted="false" />
+      <Diagram DiagramId="151c6df0aeb74154bcb27e7e8058ded7" Name="Diagram1">
+        <EntityTypeShape EntityType="DemoAppDbModel.Agent" Width="1.5" PointX="3.75" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoAppDbModel.Application" Width="1.5" PointX="6" PointY="23.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoAppDbModel.ApplicationStatus" Width="1.5" PointX="3.75" PointY="26.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoAppDbModel.CompanyType" Width="1.5" PointX="1.5" PointY="23" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoAppDbModel.Employee" Width="1.5" PointX="10" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoAppDbModel.EmployeeMovement" Width="1.5" PointX="12.25" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoAppDbModel.Equipment" Width="1.5" PointX="12.25" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoAppDbModel.EquipmentMaster" Width="1.5" PointX="14.5" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoAppDbModel.EquipmentState" Width="1.5" PointX="10" PointY="24" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoAppDbModel.Manufacture" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoAppDbModel.ManufactureMaterial" Width="1.5" PointX="7.5" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoAppDbModel.Master" Width="1.5" PointX="12.25" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoAppDbModel.Material" Width="1.5" PointX="5.25" PointY="17.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoAppDbModel.MaterialHistory" Width="1.5" PointX="7.5" PointY="17.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoAppDbModel.MaterialType" Width="1.5" PointX="3" PointY="17.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoAppDbModel.MovementType" Width="1.5" PointX="10" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoAppDbModel.OperationType" Width="1.5" PointX="5.25" PointY="29.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoAppDbModel.Position" Width="1.5" PointX="7.75" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoAppDbModel.PriceHistory" Width="1.5" PointX="5.25" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoAppDbModel.Product" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoAppDbModel.ProductApplication" Width="1.5" PointX="8.25" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoAppDbModel.ProductStandart" Width="1.5" PointX="0.75" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoAppDbModel.ProductType" Width="1.5" PointX="0.75" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoAppDbModel.Sale" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoAppDbModel.SaleHistory" Width="1.5" PointX="5.25" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoAppDbModel.SalePoint" Width="1.5" PointX="6" PointY="31.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoAppDbModel.Supplier" Width="1.5" PointX="9.75" PointY="20.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoAppDbModel.UnitType" Width="1.5" PointX="3" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoAppDbModel.Workshop" Width="1.5" PointX="3" PointY="2.25" IsExpanded="true" />
+        <AssociationConnector Association="DemoAppDbModel.FK_Agent_CompanyType" ManuallyRouted="false" />
+        <AssociationConnector Association="DemoAppDbModel.FK_Application_Agent" ManuallyRouted="false" />
+        <AssociationConnector Association="DemoAppDbModel.FK_SalePoint_Agent" ManuallyRouted="false" />
+        <AssociationConnector Association="DemoAppDbModel.FK_Application_ApplicationStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="DemoAppDbModel.FK_ProductApplication_Application" ManuallyRouted="false" />
+        <AssociationConnector Association="DemoAppDbModel.FK_Supplier_CompanyType" ManuallyRouted="false" />
+        <AssociationConnector Association="DemoAppDbModel.FK_Employee_Position" ManuallyRouted="false" />
+        <AssociationConnector Association="DemoAppDbModel.FK_EmployeeMovement_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="DemoAppDbModel.FK_Master_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="DemoAppDbModel.FK_EmployeeMovement_MovementType" ManuallyRouted="false" />
+        <AssociationConnector Association="DemoAppDbModel.FK_Equipment_EquipmentState" ManuallyRouted="false" />
+        <AssociationConnector Association="DemoAppDbModel.FK_EquipmentMaster_Equipment" ManuallyRouted="false" />
+        <AssociationConnector Association="DemoAppDbModel.FK_EquipmentMaster_Master" ManuallyRouted="false" />
+        <AssociationConnector Association="DemoAppDbModel.FK_Manufacture_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="DemoAppDbModel.FK_Manufacture_Workshop" ManuallyRouted="false" />
+        <AssociationConnector Association="DemoAppDbModel.FK_ManufactureMaterial_Manufacture" ManuallyRouted="false" />
+        <AssociationConnector Association="DemoAppDbModel.FK_ManufactureMaterial_Material" ManuallyRouted="false" />
+        <AssociationConnector Association="DemoAppDbModel.FK_Material_MaterialType" ManuallyRouted="false" />
+        <AssociationConnector Association="DemoAppDbModel.FK_Material_UnitType" ManuallyRouted="false" />
+        <AssociationConnector Association="DemoAppDbModel.FK_MaterialHistory_Material" ManuallyRouted="false" />
+        <AssociationConnector Association="DemoAppDbModel.FK_MaterialHistory_OperationType" ManuallyRouted="false" />
+        <AssociationConnector Association="DemoAppDbModel.FK_Supplier_MaterialHistory" ManuallyRouted="false" />
+        <AssociationConnector Association="DemoAppDbModel.FK_PriceHistory_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="DemoAppDbModel.FK_Product_ProductStandart" ManuallyRouted="false" />
+        <AssociationConnector Association="DemoAppDbModel.FK_Product_ProductType" ManuallyRouted="false" />
+        <AssociationConnector Association="DemoAppDbModel.FK_ProductApplication_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="DemoAppDbModel.FK_SaleHistory_Product" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

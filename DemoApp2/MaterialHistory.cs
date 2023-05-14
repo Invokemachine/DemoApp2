@@ -14,6 +14,7 @@ namespace DemoApp2
     
     public partial class MaterialHistory
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public MaterialHistory()
         {
             this.Supplier = new HashSet<Supplier>();
@@ -26,6 +27,7 @@ namespace DemoApp2
     
         public virtual Material Material { get; set; }
         public virtual OperationType OperationType { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Supplier> Supplier { get; set; }
     }
 }

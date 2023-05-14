@@ -14,6 +14,7 @@ namespace DemoApp2
     
     public partial class EquipmentState
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public EquipmentState()
         {
             this.Equipment = new HashSet<Equipment>();
@@ -22,6 +23,7 @@ namespace DemoApp2
         public int EquipmentStateId { get; set; }
         public string Name { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Equipment> Equipment { get; set; }
     }
 }
